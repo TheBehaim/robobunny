@@ -13,6 +13,7 @@ Körper:
 Length = 250 mm (Körperlänge)
 Width = 100 mm (Breite)
 Height = 140 mm (Schulterhöhe)
+Vier zylindrische Bein­Platzhalter.
 
 Placeholder-Servos: 30 × 20 × 40 mm
 8 Bein-Servos, plus 2 Kopf-Servos.
