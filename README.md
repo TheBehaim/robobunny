@@ -1,6 +1,4 @@
-# robobunny
-Realistischer Roboterhase mit KI und Sensorik
-
+# Robobunny
 Ein interaktiver, autonomer Roboter in Zwergkaninchen-Größe mit realistischen Bewegungen, KI-Verhalten, Spracherkennung und Sensorik.
 
 ## Projektziel
@@ -19,3 +17,15 @@ Ein voll autonomer Roboterhase mit realistischem Aussehen und Verhalten – Hopp
 - `/elektronik` – Schaltpläne, Stromlauf, Sensor-Verdrahtung
 - `/software` – Python-Code für Steuerung, Gait, Sensorik
 - `/doku` – Projektplanung, Feature-Tabellen, Notizen
+
+## Aktuell in Bearbeitung
+- Block-Out-CAD: Grobes CAD-Modell - Bauraum klären, Schwerpunkt prüfen, Servohalteplatten definieren.
+
+## In der Zukunft zu machen
+
+- Vollständige Einkaufsliste erstellen - Siehe Komponentenliste (wird noch erweitert)
+- Einzelteile (CNC-Dateien) zuschneiden lassen und Mechanische sowie Computerteile bestellen.
+- Raspberry Pi 5 flashen
+- Pythonprojekt erstellen
+- Robo Hase zusammenbauen
+- Nicht aufgeben
