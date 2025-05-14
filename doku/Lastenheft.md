@@ -10,6 +10,7 @@ Der RoboBunny ist ein autonomer Roboter in Zwergkaninchenform, der sich realisti
 | Feature                        | Beschreibung |
 |-------------------------------|--------------|
 | Hoppeln                       | Fortbewegung durch Sprung-Sequenzen mit 4 Beinen |
+| Laufen                        | Langsames gehen, Trippelgang |
 | Sitz-/Liegeposition           | Fähigkeit, aufrecht zu sitzen und eingerollt zu ruhen |
 | Ohren-/Schwanzbewegung        | Ausdruck über bewegliche Ohren & wackelnden Schwanz |
 | Nase wackeln                  | Charakteristisches Zucken per Mikro-Servo oder Vibration |
@@ -34,7 +35,7 @@ Der RoboBunny ist ein autonomer Roboter in Zwergkaninchenform, der sich realisti
 | Gait-Simulation in PyBullet   | Vorab-Test der Gangalgorithmen |
 | Watchdog-MCU (Failsafe)       | Arduino/ESP zur Überwachung & Notstopp |
 | Py-Webinterface zur Telemetrie| Anzeige von Sensorwerten über Browser |
-| LiDAR (z. B. TF-Luna)         | Tiefenerkennung & präzise Navigation |
+| LiDAR (z. B. TF-Luna)          | Tiefenerkennung & präzise Navigation |
 | Kamera-Gimbal                 | Aktive Kopfbewegung zur Zielverfolgung |
 | Simulation (PyBullet)         | Digitale Umgebung zur Gait-Planung & Debugging |
 
