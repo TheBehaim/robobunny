@@ -19,6 +19,7 @@ Ein voll autonomer Roboterhase mit realistischem Aussehen und Verhalten – Hopp
 - `/doku` – Projektplanung, Feature-Tabellen, Notizen
 
 ## Aktuell in Bearbeitung
+- Free CAD lernen
 - Block-Out-CAD: Grobes CAD-Modell - Bauraum klären, Schwerpunkt prüfen, Servohalteplatten definieren.
 
 ## In der Zukunft zu machen

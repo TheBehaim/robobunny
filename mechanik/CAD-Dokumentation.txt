@@ -13,11 +13,36 @@ Körper:
 Length = 250 mm (Körperlänge)
 Width = 100 mm (Breite)
 Height = 140 mm (Schulterhöhe)
-Vier zylindrische Bein­Platzhalter.
 
-Placeholder-Servos: 30 × 20 × 40 mm
-8 Bein-Servos, plus 2 Kopf-Servos.
-Akku-Block: 105 × 34 × 24 mm
-Raspberry Pi 5-Block: 85 × 56 × 18 mm, etwas über Akku (Luft­strom!)
-LiDAR-Block (TF-Luna): 20 × 20 × 35 mm, auf Kopf-Oberseite.
-Kamera-Gimbal: zwei Boxen (Pan-Servo, Tilt-Servo) + Ø15 mm Zylinder als Kamera.
+### Platzhalter-Maße & Servo-Größen für dein Block-Out-CAD
+
+| Bauteil                                      | Vorschlag Block-Out-Maß\* | Reale Komponente                   | Typische Original-Maße (B × H × T)               | Kommentar                                           |
+| -------------------------------------------- | ------------------------- | ---------------------------------- | ------------------------------------------------ | --------------------------------------------------- |
+| **XL-430 Servo** (Bein-Hüfte / Knie)         | **35 × 50 × 40 mm**       | Robotis XL430-W250-T               | 28.5 × 46.5 × 34 mm                              | nimm +2 mm Luft ringsum → einfacher Einbau          |
+| **XL-430 Servo** (Kamera-Pan oder -Tilt)\*\* | 35 × 50 × 40 mm           | s. o.                              | s. o.                                            | Robust genug, wenn der ganze Kopf rotiert           |
+| **Micro-Servo (Ohren, Schwanz, Nase)**       | **15 × 28 × 30 mm**       | Hitec HS-5070MH / Dynamixel XL-330 | ca. 12 × 23 × 24 mm<br>(XL-330: 23 × 36 × 24 mm) | auch hier +2–3 mm Puffer                            |
+| **Bein-Segment „Oberschenkel“**              | **70 × 30 × 14 mm**       | Alu-Profil                         | Länge ≈ ⅓ Körper, Breite etwas > Servo-Horn      | nur grober Klotz genügt                             |
+| **Bein-Segment „Unterschenkel“**             | **60 × 25 × 14 mm**       | Alu-Profil                         | etwas kürzer & schlanker                         |                                                     |
+| **Kopfblock** (inkl. Gimbal & Kamera)        | **80 × 60 × 60 mm**       | Gimbal + Kameramodul               | –                                                | bietet Platz für zwei Ohren-Servos + Kamera + LiDAR |
+| **Schwanz-Servo-Block**                      | 15 × 28 × 30 mm           | Micro-Servo                        | s. o.                                            | sitzt hinten unter dem Fell                         |
+| **Akku-Block** (3S LiPo 3000 mAh)            | 105 × 35 × 25 mm          | beliebiger 3S Pack                 | –                                                | länglich, möglichst niedrig im Körper               |
+| **Raspberry Pi 5**                           | 90 × 60 × 20 mm           | Pi 5 + Kühlkörper                  | 85 × 56 × 19 mm                                  | etwas Luft für Stecker                              |
+
+\*Block-Out-Maß = dein CAD-Würfel; ruhig 1–3 mm größer als das echte Teil.
+
+---
+
+#### Servo-Anzahl (Basis-Plan)
+
+| Funktion                              | Empfehlung                                     | Type                             |
+| ------------------------------------- | ---------------------------------------------- | -------------------------------- |
+| Vorderbeine: Hüfte + Knie (2 DOF × 2) | **4 × XL-430**                                 | „Kraft-Servos“                   |
+| Hinterbeine: Hüfte + Knie (2 DOF × 2) | **4 × XL-430**                                 |                                  |
+| Kopf: Pan + Tilt                      | **2 × XL-430** (oder XL-330 wenn Platz sparen) | für Kamera-Gimbal & Kopfbewegung |
+| Ohren links/rechts (Auf-/Abklappen)   | **2 × Micro-Servo**                            | HS-5070MH o. XL-330              |
+| Schwanz                               | **1 × Micro-Servo**                            | s. o.                            |
+| Nase (Vib-Motor **oder** Mikro-Servo) | 1 × Mikro-Servo **oder** Vibrationsmotor       |                                  |
+
+**Summe:** 12 × XL-430 + 5 × Micro-Servos = 17 Aktuatoren
+
+Teile können sich nachträglich noch weiterhin ändern!
